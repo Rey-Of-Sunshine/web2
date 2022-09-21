@@ -1,87 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" media="screen and (min-width: 750px)" href="style750px.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3570705ef4.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div>
-            <img src="">
-            <span>Example</span>
-        </div>
-        <nav>
-            <li class="activ">about me</li>
-            <li><a href="#">contact</a></li>
-            <li><a href="#">blog</a></li>
-        </nav>
-    </header>
-    <main>
-        <section class="profile">
-            <div class="profile_foto">
-                <img src="">
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <span>C</span>MIHAILOVA SVETLANA
+                </a>
+                <ul class="social">
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-vk"></i></a></li>
+                </ul>
             </div>
-            <div class="profile_info">
-                <div>
-                    <h2>IM SVETLANA NIHAILOVA</h2>
-                    <span>student</span>
+        </div>
+    </header>
+    <nav>
+        <li class="active"><i class="fa-solid fa-user"></i><span>About me</span></li>
+        <li><a href="#"><i class="fa-solid fa-book-open"></i><span>Resume</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-diagram-project"></i><span>Portfolio</span></a></li>
+        <li><a href="contacts.html"><i class="fa-solid fa-address-card"></i><span>Contacts</span></a></li>
+    </nav>
+    <main>
+        <section class="about">
+            <h1>About me</h1>
+            <div class="about">
+                <div class="photo">
+                    <img width="300" height="300" src="images/um7k6ZFWRwo.jpg">
                 </div>
-                <div class="profile_data">
-                    <div class="profil_titel">
-                        <span>Age</span>
-                        <span>Address</span>
-                        <span>Email</span>
-                        <span>Phone</span>
-                        <span>Website</span>
+                <div class="info">
+                    <div>
+                        <h4>Main information</h4>
+                        <div class="info__flex">
+                            <div class="info_row">
+                                <ul class="title">
+                                    <li>name</li>
+                                    <li>location</li>
+                                    <li>e-mail</li>
+                                </ul>
+                                <ul>
+                                    <li>Mihailova Svetlana</li>
+                                    <li>Russia, Dubna</li>
+                                    <li>Student</li>
+                                    <li>example@example.ru</li>
+                                </ul>
+                            </div>
+                            <div class="info_col"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Hello</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolor eaque iusto officiis velit!
+                            Blanditiis exercitationem inventore libero maiores maxime necessitatibus officiis quisquam
+                            tempora! A consectetur delectus molestias porro repellat sapiente sit vitae, voluptatem! A
+                            accusamus dolor impedit labore reprehenderit sint unde, voluptas. Deserunt magnam maxime non
+                            porro quis vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis enim excepturi
+                            fugiat fugit iusto laboriosam nemo sapiente totam voluptates? A alias aperiam cupiditate
+                            deserunt dolorum eveniet expedita facere inventore ipsum iusto minus numquam provident quam
+                            quibusdam quidem ratione, recusandae reprehenderit rerum sapiente voluptatibus. Iusto placeat
+                            quasi quia reprehenderit unde voluptatem.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <h3>SKILLS</h3>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda delectus repellat, ipsum fugit esse optio dolorum nisi nemo voluptatem quidem sed ut, quibusdam impedit earum? Corporis suscipit deleniti repudiandae beatae!</p>
-            </div>
-            <div>
-                <ul class="skill_title">
-                    <li>
-                        <span class="skill_title">FRONT-END</span>
-                        <div class="skill_progress"></div>
-                    </li>
-                    <li>
-                        <span class="skill_title">BACK-END</span>
-                        <div class="skill_progress"></div>
-                    </li>
-                    <li>
-                        <span class="skill_title">MOBILE APP</span>
-                        <div class="skill_progress"></div>
-                    </li>
-                    <li>
-                        <span class="skill_title">DESKTOP</span>
-                        <div class="skill_progress"></div>
-                    </li>
-                </ul>
-            </div>
+        <section class="skills">
+            <h2>Core Skills</h2>
+            <ul class="skills-list">
+                <li>Github</li>
+                <li>HTML</li>
+            </ul>
         </section>
         <section>
-            <h3>EDUCATION</h3>
-            <div>
-                <ul class="education_title">
-                    <li>
-                        <span class="education_title">WEB-TECHNOLOGIES</span>
-                        <div class="education_location">University "Dubna"</div>
-                        <div class="education_time">2022</div>
-                    </li>
-                </ul>
-            </div>
+            <h2>Contact me</h2>
+            <form method="POST" id="contactForm" name="contactForm" class="contactForm" novalidate="novalidate">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="label" for="name">Full Name</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="label" for="email">Email Address</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="label" for="subject">Subject</label>
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="label" for="#">Message</label>
+                            <textarea name="message" class="form-control" id="message" cols="30" rows="4"
+                                      placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="margin-top: 10px">
+                        <div class="form-group">
+                            <input type="submit" value="Send Message" class="btn btn-primary">
+                            <div class="submitting"></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </section>
     </main>
-    <footer>
-        <div>
-            <li><a href="#">contact</a></li>
-            <li><a href="#">blog</a></li>
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <p class="footer-links">
+                <a class="link-1" href="#">Home</a>
+                <a href="#">about me</a>
+                <a href="#">resume</a>
+                <a href="#">portfolio</a>
+                <a href="#">Contact</a>
+            </p>
+            <p>Mihailova Svetlana &copy; 2022</p>
+        </div>
+        <div class="footer-right">
+            <a href="#"><i class="fa fa-github"></i></a>
+            <a href="#"><i class="fa fa-vk"></i></a>
         </div>
     </footer>
 </body>
