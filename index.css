@@ -9,7 +9,7 @@
     top: 0;
     width: 100%;
     z-index: 5;
-    background-color: #FFF;
+    background-color: rgb(224, 238, 240);
     padding: 35px 0;
     transition-delay: 0s;
     transition-duration: 0.4s;
@@ -146,7 +146,7 @@ div.about {
 }
 
 .about .photo {
-    align-self: flex-start;
+    align-self: center;
     flex-grow: 1;
 }
 
@@ -165,9 +165,14 @@ div.about {
         margin: 0 auto 10px;
     }
 
-    nav span {
+   /* nav span {
         display: none;
-    }
+    }*/
+}
+
+div.about.photo{
+    justify-content: center;
+    align-self: center;
 }
 
 div.about .info_row {

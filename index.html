@@ -13,10 +13,10 @@
 </head>
 <body>
     <header class="header" id="header">
-        <div class="container">
+        <div class="container-sm">
             <div class="header-inner">
                 <a href="index.html" class="logo">
-                    <span>C</span>MIHAILOVA SVETLANA
+                    MIHAILOVA SVETLANA
                 </a>
                 <ul class="social">
                     <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
@@ -26,18 +26,41 @@
         </div>
     </header>
     <nav>
-        <li class="active"><i class="fa-solid fa-user"></i><span>About me</span></li>
-        <li><a href="#"><i class="fa-solid fa-book-open"></i><span>Resume</span></a></li>
-        <li><a href="#"><i class="fa-solid fa-diagram-project"></i><span>Portfolio</span></a></li>
-        <li><a href="contacts.html"><i class="fa-solid fa-address-card"></i><span>Contacts</span></a></li>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"><li class="active"><i class="fa-solid fa-user"></i><span>About me</span></li></div>
+                <div class="col-md-4"><li><a href="#"><i class="fa-solid fa-book-open"></i><span>Resume</span></a></li></div>
+                <div class="col-md-4"><li><a href="#"><i class="fa-solid fa-diagram-project"></i><span>Portfolio</span></a></li></div>
+            </div>
+        </div>
     </nav>
     <main>
         <section class="about">
             <h1>About me</h1>
             <div class="about">
-                <div class="photo">
-                    <img width="300" height="300" src="images/um7k6ZFWRwo.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="photo">
+                                <img width="300" height="300" src="images/um7k6ZFWRwo.jpg">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md">
+                            <h4>Hello</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolor eaque iusto officiis velit!
+                                Blanditiis exercitationem inventore libero maiores maxime necessitatibus officiis quisquam
+                                tempora! A consectetur delectus molestias porro repellat sapiente sit vitae, voluptatem! A
+                                accusamus dolor impedit labore reprehenderit sint unde, voluptas. Deserunt magnam maxime non
+                                porro quis vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis enim excepturi
+                                fugiat fugit iusto laboriosam nemo sapiente totam voluptates? A alias aperiam cupiditate
+                                deserunt dolorum eveniet expedita facere inventore ipsum iusto minus numquam provident quam
+                                quibusdam quidem ratione, recusandae reprehenderit rerum sapiente voluptatibus. Iusto placeat
+                                quasi quia reprehenderit unde voluptatem.</p>
+                        </div>
+                    </div>
                 </div>
+                
                 <div class="info">
                     <div>
                         <h4>Main information</h4>
@@ -45,30 +68,16 @@
                             <div class="info_row">
                                 <ul class="title">
                                     <li>name</li>
-                                    <li>location</li>
                                     <li>e-mail</li>
                                 </ul>
                                 <ul>
                                     <li>Mihailova Svetlana</li>
                                     <li>Russia, Dubna</li>
                                     <li>Student</li>
-                                    <li>example@example.ru</li>
                                 </ul>
                             </div>
-                            <div class="info_col"></div>
+                            <div class="info_col-md-5"></div>
                         </div>
-                    </div>
-                    <div>
-                        <h4>Hello</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolor eaque iusto officiis velit!
-                            Blanditiis exercitationem inventore libero maiores maxime necessitatibus officiis quisquam
-                            tempora! A consectetur delectus molestias porro repellat sapiente sit vitae, voluptatem! A
-                            accusamus dolor impedit labore reprehenderit sint unde, voluptas. Deserunt magnam maxime non
-                            porro quis vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis enim excepturi
-                            fugiat fugit iusto laboriosam nemo sapiente totam voluptates? A alias aperiam cupiditate
-                            deserunt dolorum eveniet expedita facere inventore ipsum iusto minus numquam provident quam
-                            quibusdam quidem ratione, recusandae reprehenderit rerum sapiente voluptatibus. Iusto placeat
-                            quasi quia reprehenderit unde voluptatem.</p>
                     </div>
                 </div>
             </div>
@@ -126,7 +135,6 @@
                 <a href="#">about me</a>
                 <a href="#">resume</a>
                 <a href="#">portfolio</a>
-                <a href="#">Contact</a>
             </p>
             <p>Mihailova Svetlana &copy; 2022</p>
         </div>
